@@ -1,0 +1,19 @@
+*{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  app-sign-in{
+    width: 60vw;
+    height: 60vh;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+img{
+  position: fixed;
+  height: 10vh;
+  width: auto;
+  margin: 2%;
+}

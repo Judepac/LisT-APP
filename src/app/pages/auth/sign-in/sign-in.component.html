@@ -1,0 +1,22 @@
+<div class="text"></div>
+
+<form (ngSubmit)='onSubmit()' ngNativeValidate>
+  <div class="input">
+
+    <div>
+      <label for="email">E-Mail</label>
+      <input name="email" type="email" [(ngModel)]="auth.email" required>
+    </div>
+
+    <div>
+      <label for="password">Mot de passe</label>
+      <input name="password" type="password" [(ngModel)]="auth.password" required>
+    </div>
+  </div>
+
+  <div class="newAccount">
+    <p>Nouveau sur LisT? <a routerLink="signUp">Créer un compte</a></p>
+    <button type="submit">Valider</button>
+  </div>
+
+</form>

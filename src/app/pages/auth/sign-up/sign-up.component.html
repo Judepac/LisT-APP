@@ -1,0 +1,52 @@
+<img src="../../../assets/logoOk.png" alt="Logo de List">
+
+<img (click)="back()" src="../../../../assets/retour.png" class="return">
+
+
+<div class="container">
+
+  <div class="form">
+
+    <form (ngSubmit)='onSubmit()' ngNativeValidate>
+      <h2>Création du compte</h2>
+      <div class="input">
+
+        <div class="people">
+          <div>
+            <label for="lastname">Nom:</label>
+            <input name="lastname" type="text" [(ngModel)]="auth.lastname" required>
+          </div>
+
+          <div>
+            <label for="firstname">Prénom:</label>
+            <input name="firstname" type="text" [(ngModel)]="auth.firstname" required>
+          </div>
+
+          <div>
+            <label for="birthday">Date de naissance:</label>
+            <input name="birthday" type="date" [(ngModel)]="auth.birthday" required>
+          </div>
+        </div>
+
+
+        <div class="verif">
+
+          <div>
+            <label for="email">E-Mail:</label>
+            <input name="email" type="email" [(ngModel)]="auth.email" required>
+          </div>
+
+          <div>
+            <label for="password">Mot de passe:</label>
+            <input name="password" type="password" [(ngModel)]="auth.password" required>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Créer</button>
+
+    </form>
+  </div>
+
+
+</div>
