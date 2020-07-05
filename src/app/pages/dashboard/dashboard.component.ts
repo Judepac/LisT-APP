@@ -1,4 +1,6 @@
+import { User } from './../../shared/models/user';
 import { Component, OnInit } from '@angular/core';
+import { SignInService } from '../../shared/services/sign-in.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  user: User;
 
-  constructor() { }
+  constructor(private service: SignInService) { }
 
   ngOnInit() {
+    this.user = this.service.user;
   }
-
 }
