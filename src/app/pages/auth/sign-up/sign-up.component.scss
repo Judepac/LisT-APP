@@ -40,6 +40,7 @@ img{
       h2{
         text-align: center;
         text-decoration: underline;
+        padding-top: 3vh;
       }
       button{
         align-self: center;
@@ -56,21 +57,14 @@ img{
         color: #005691;
       }
       .input{
-        font-size: 1.5em;
-        line-height: 2em;
-        height: 75%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         .people, .verif{
           width: 40%;
-          padding: 2%;
           div{
             display: flex;
             flex-direction: column;
-            input{
-             height: 2.3vh;
-            }
           }
         }
       }

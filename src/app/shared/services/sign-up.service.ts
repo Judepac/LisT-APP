@@ -12,7 +12,7 @@ export class SignUpService {
 
   constructor(private http: HttpClient) { }
 
-createNewUser(user: User): Observable<User> {
-   return this.http.post<User>(SignUpService.URL + 'signUp', user);
+createNewUser(user: User): Observable<string> {
+   return this.http.post<string>(SignUpService.URL + 'signUp', user);
   }
 }

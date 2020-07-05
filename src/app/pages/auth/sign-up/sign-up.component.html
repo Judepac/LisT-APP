@@ -12,33 +12,33 @@
       <div class="input">
 
         <div class="people">
-          <div>
+          <div class="form-group">
             <label for="lastname">Nom:</label>
-            <input name="lastname" type="text" [(ngModel)]="auth.lastname" required>
+            <input class="form-control" name="lastname" type="text" [(ngModel)]="auth.lastname" required>
           </div>
 
-          <div>
+          <div class="form-group">
             <label for="firstname">Prénom:</label>
-            <input name="firstname" type="text" [(ngModel)]="auth.firstname" required>
+            <input class="form-control" name="firstname" type="text" [(ngModel)]="auth.firstname" required>
           </div>
 
-          <div>
+          <div class="form-group">
             <label for="birthday">Date de naissance:</label>
-            <input name="birthday" type="date" [(ngModel)]="auth.birthday" required>
+            <input class="form-control" name="birthday" type="date" [(ngModel)]="auth.birthday" required>
           </div>
         </div>
 
 
         <div class="verif">
 
-          <div>
+          <div class="form-group">
             <label for="email">E-Mail:</label>
-            <input name="email" type="email" [(ngModel)]="auth.email" required>
+            <input class="form-control" name="email" type="email" [(ngModel)]="auth.email" required>
           </div>
 
-          <div>
+          <div class="form-group">
             <label for="password">Mot de passe:</label>
-            <input name="password" type="password" [(ngModel)]="auth.password" required>
+            <input class="form-control" name="password" type="password" [(ngModel)]="auth.password" required>
           </div>
         </div>
       </div>
