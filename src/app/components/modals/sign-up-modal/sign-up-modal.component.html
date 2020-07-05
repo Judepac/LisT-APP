@@ -1,0 +1,16 @@
+<div *ngIf="message" (onHidden)= "onHidden()">
+
+
+  <div class="modal-header" >
+    <h4 class="modal-title pull-right">Inscription</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p><span>{{message}}</span></p>
+    <p>Vous allez être redirigé pour vous connecter.</p>
+    <p>A tout de suite</p>
+  </div>
+
+</div>
